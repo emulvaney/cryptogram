@@ -1,0 +1,40 @@
+
+A Cryptogram Game
+
+Copyright (c) 2006 Eric Mulvaney <eric.mulvaney@gmail.com>
+
+
+INTRODUCTION
+
+Cryptograms are puzzles based typically on simple substitution
+ciphers, wherein each letter of a short message is replaced with
+another from the alphabet.  For details, try Wikipedia.
+
+	PNA LBH QRPBQR GUVF FRPERG ZRFFNTR?
+
+This short Perl script creates cryptograms from random fortunes,
+assuming you have the "fortune" program installed; if not, you can
+enter puzzles manually.  It also provides a nice interface for you to
+work on solving them.
+
+
+USAGE
+
+perl crypto.pl
+
+If you have "fortune" installed, crypto.pl will use it to generate a
+random cryptogram.  Otherwise, you will have to manually type in one
+yourself from a book, magazine, etc.
+
+Next the cryptogram should be printed out, each line of the puzzle
+followed by another with only the punctuation.  This second line is
+the workspace, where your guesses will be filled in as you play.
+
+Finally you are prompted to start on the puzzle.  If you think "A"
+stands for "B", enter "AB" and the puzzle will be reprinted with your
+guess displayed neatly below the cryptogram.  Change your mind about
+"A", try another guess or just enter "A" and your guess disappears.
+
+To quit the game, use ":q".  There are also commands for resetting all
+your guesses (:r), starting new games (:n), saving, loading and more.
+Enter "?", ":h" or ":help" to get the full list.
